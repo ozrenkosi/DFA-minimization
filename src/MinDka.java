@@ -56,7 +56,7 @@ public class MinDka {
         List<String> reachableStates = new ArrayList<>();
         List<String> unreachableStates = new ArrayList<>();
 
-        // FINDING REACHABLE states
+        // FINDING REACHABLE STATES
         reachableStates.add(initialState);
         for (int i = 0; i < reachableStates.size(); i++) {
             for (int j = 0; j < transitionFunction.size(); j++) {
@@ -70,7 +70,7 @@ public class MinDka {
             }
         }
 
-        // FINDING UNREACHABLE states
+        // FINDING UNREACHABLE STATES
         for (int i = 0; i < states.size(); i++) {
             if (!reachableStates.contains(states.get(i)) && !unreachableStates.contains(states.get(i))) {
                 unreachableStates.add(states.get(i));
